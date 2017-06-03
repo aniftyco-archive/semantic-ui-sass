@@ -1,0 +1,38 @@
+{
+  "name": "semantic-ui-sass",
+  "version": "2.2.10",
+  "description": "Semantic UI, converted to Sass",
+  "license": "MIT",
+  "homepage": "http://www.semantic-ui.com",
+  "repository": "aniftyco/semantic-ui-sass",
+  "style": "semantic-ui.scss",
+  "sass": "semantic-ui.scss",
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test",
+    "release": "gulp release"
+  },
+  "author": {
+    "name": "NiftyCo",
+    "email": "support@anifty.co",
+    "url": "https://anifty.co"
+  },
+  "contributors": [
+    {
+      "name": "Josh Manders",
+      "url": "https://twitter.com/joshmanders"
+    }
+  ],
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-git": "^2.4.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^1.2.2"
+  }
+}
