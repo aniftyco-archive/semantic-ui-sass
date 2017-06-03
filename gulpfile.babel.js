@@ -21,7 +21,7 @@ gulp.task('move-scss', () => {
   return gulp.src(`${TEMP_DIR}/app/assets/stylesheets/**/*.scss`)
     .pipe(replace(/semantic-ui\/icons/g, '#{\$icons-font-path}/icons'))
     .pipe(replace(/semantic-ui\/flags\.png/g, '#{\$flags-image-path}/flags.png'))
-    .pipe(replace(/src: font-url/g, 'src: url'))
+    .pipe(replace(/font-url\(/g, 'url('))
     .pipe(gulp.dest('./'));
 });
 
