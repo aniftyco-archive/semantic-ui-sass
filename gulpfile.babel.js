@@ -19,7 +19,7 @@ gulp.task('fetch', (done) => {
 
 gulp.task('move-scss', () => {
   return gulp.src(`${TEMP_DIR}/app/assets/stylesheets/**/*.scss`)
-    .pipe(replace(/semantic-ui\/iconsyarn/g, '#{\$icons-font-path}/icons'))
+    .pipe(replace(/semantic-ui\/icons/g, '#{\$icons-font-path}/icons'))
     .pipe(replace(/semantic-ui\/flags\.png/g, '#{\$flags-image-path}/flags.png'))
     .pipe(gulp.dest('./'));
 });
