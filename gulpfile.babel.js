@@ -10,7 +10,7 @@ const SRC_REPO = 'https://github.com/doabit/semantic-ui-sass';
 const TEMP_DIR = '.temp';
 
 gulp.task('clean', () => {
-  return del(['./.temp', './semantic-ui.scss', './semantic-ui', './icons', './images']);
+  return del(['./.temp', './semantic-ui.scss', './semantic-ui.js', './semantic-ui', './icons', './images', './js']);
 });
 
 gulp.task('fetch', (done) => {
@@ -35,6 +35,17 @@ gulp.task('move-icons', () => {
     .pipe(gulp.dest('./icons/'));
 });
 
+gulp.task('move-javascript', () => {
+  return gulp.src(`${TEMP_DIR}/app/assets/javascripts/semantic-ui/**/*`)
+    .pipe(gulp.dest('./js/'));
+});
+
+gulp.task('move-js', ['move-javascript'], () => {
+  return gulp.src(`${TEMP_DIR}/app/assets/javascripts/semantic-ui.js`)
+    .pipe(replace(/\/\/= require semantic-ui\/(.+)/g, `require('./js/$1');`))
+    .pipe(gulp.dest('./'));
+});
+
 gulp.task('append-to-variables', () => {
   return gulp.src('./semantic-ui/globals/_variables.scss')
     .pipe(append(`$icons-font-path: '../../icons' !default;\n`))
@@ -43,7 +54,7 @@ gulp.task('append-to-variables', () => {
 });
 
 gulp.task('build', (done) => {
-  run('clean', 'fetch', ['move-scss', 'move-images', 'move-icons'], 'append-to-variables', done);
+  run('clean', 'fetch', ['move-scss', 'move-images', 'move-icons', 'move-js'], 'append-to-variables', done);
 });
 
 gulp.task('test', () => {

@@ -12,6 +12,12 @@ The package only has the default theme.
 yarn add --dev semantic-ui-sass
 ```
 
+### JavaScript
+
+```javascript
+import 'semantic-ui-sass';
+```
+
 ### CSS
 
 Import Semantic in an SCSS file (for example, `application.scss`) to get all of Semantic's styles

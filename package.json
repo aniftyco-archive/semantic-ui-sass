@@ -7,6 +7,7 @@
   "repository": "aniftyco/semantic-ui-sass",
   "style": "semantic-ui.scss",
   "sass": "semantic-ui.scss",
+  "main": "semantic-ui.js",
   "scripts": {
     "build": "gulp build",
     "test": "gulp test",
