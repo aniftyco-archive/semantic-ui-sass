@@ -1,10 +1,10 @@
 {
   "name": "semantic-ui-sass",
-  "version": "2.2.11",
+  "version": "2.3.12",
   "description": "Semantic UI, converted to Sass",
   "license": "MIT",
   "homepage": "http://www.semantic-ui.com",
-  "repository": "aniftyco/semantic-ui-sass",
+  "repository": "maxcreation/semantic-ui-sass",
   "style": "semantic-ui.scss",
   "sass": "semantic-ui.scss",
   "main": "semantic-ui.js",
@@ -14,14 +14,17 @@
     "release": "gulp release"
   },
   "author": {
-    "name": "NiftyCo",
-    "email": "support@anifty.co",
-    "url": "https://anifty.co"
+    "name": "Magnus Nirgi",
+    "email": "maxcreation@gmail.com"
   },
   "contributors": [
     {
       "name": "Josh Manders",
       "url": "https://twitter.com/joshmanders"
+    },
+    {
+      "name": "Magnus Nirgi",
+      "email": "maxcreation@gmail.com"
     }
   ],
   "devDependencies": {
