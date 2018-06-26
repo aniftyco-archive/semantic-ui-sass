@@ -14,8 +14,9 @@
     "release": "gulp release"
   },
   "author": {
-    "name": "Magnus Nirgi",
-    "email": "maxcreation@gmail.com"
+    "name": "NiftyCo",
+    "email": "support@anifty.co",
+    "url": "https://anifty.co"
   },
   "contributors": [
     {
