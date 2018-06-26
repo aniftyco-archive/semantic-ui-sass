@@ -4,7 +4,7 @@
   "description": "Semantic UI, converted to Sass",
   "license": "MIT",
   "homepage": "http://www.semantic-ui.com",
-  "repository": "maxcreation/semantic-ui-sass",
+  "repository": "aniftyco/semantic-ui-sass",
   "style": "semantic-ui.scss",
   "sass": "semantic-ui.scss",
   "main": "semantic-ui.js",
