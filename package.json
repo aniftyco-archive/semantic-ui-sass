@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-sass",
-  "version": "2.2.11",
+  "version": "2.3.12",
   "description": "Semantic UI, converted to Sass",
   "license": "MIT",
   "homepage": "http://www.semantic-ui.com",
@@ -22,6 +22,10 @@
     {
       "name": "Josh Manders",
       "url": "https://twitter.com/joshmanders"
+    },
+    {
+      "name": "Magnus Nirgi",
+      "email": "maxcreation@gmail.com"
     }
   ],
   "devDependencies": {

@@ -20,6 +20,8 @@ gulp.task('fetch', (done) => {
 gulp.task('move-scss', () => {
   return gulp.src(`${TEMP_DIR}/app/assets/stylesheets/semantic-ui/**/*.scss`)
     .pipe(replace(/semantic-ui\/icons/g, '#{\$icons-font-path}/icons'))
+    .pipe(replace(/semantic-ui\/brand-icons/g, '#{\$icons-font-path}/brand-icons'))
+    .pipe(replace(/semantic-ui\/outline-icons/g, '#{\$icons-font-path}/outline-icons'))
     .pipe(replace(/semantic-ui\/flags\.png/g, '#{\$flags-image-path}/flags.png'))
     .pipe(replace(/font-url\(/g, 'url('))
     .pipe(gulp.dest('./scss/'));
