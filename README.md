@@ -2,6 +2,8 @@
 
 `semantic-ui-sass` is a Sass-powered version of [Semantic UI](http://www.semantic-ui.com) and ready to drop into any project.
 
+**IMPORTANT:** I no longer use Semantic UI or SASS therefore I don't have time or desire to keep this up-to-date, therefore I am archiving the repo. If anyone is interested in taking this over, find me on Twitter.
+
 ## NOTE
 
 The package only has the default theme.
